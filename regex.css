@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+html {
+    font-family: sans-serif;
+}
+
+pre {
+    margin: 0;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+.field + .field {
+    margin-top: 1em;
+}
+
+.field .label {
+    margin-bottom: 0.25em;
+}

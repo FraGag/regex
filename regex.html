@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Regular expressions</title>
+        <link rel="stylesheet" type="text/css" href="regex.css">
+        <script type="text/javascript" src="regex.js"></script>
+    </head>
+    <body>
+        <div class="field">
+            <div class="label"><label for="input">Input text:</label></div>
+            <div><textarea id="input" rows="1"></textarea></div>
+        </div>
+        <div class="field">
+            <div class="label"><label for="regex">Regular expression:</label></div>
+            <div>
+                <textarea id="regex" rows="1" spellcheck="false"></textarea>
+                <label for="global" title="global"><input id="global" type="checkbox" checked> g</label>
+                <label for="ignore_case" title="ignore case"><input id="ignore_case" type="checkbox"> i</label>
+                <label for="multiline" title="multiline"><input id="multiline" type="checkbox"> m</label>
+                <label for="unicode" title="Unicode-aware"><input id="unicode" type="checkbox"> u</label>
+                <label for="sticky" title="sticky"><input id="sticky" type="checkbox"> y</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label"><label for="function">Replacement function:</label></div>
+            <pre><code>function (match[, p1, p2, ... p<i>n</i>], offset, string) {</code></pre>
+            <div><textarea id="function" rows="1" spellcheck="false"></textarea></div>
+            <pre><code>}</code></pre>
+        </div>
+        <div class="field"><button id="replace">Replace</button></div>
+        <div class="field">
+            <div class="label"><label for="result">Result:</label></div>
+            <div><textarea id="result" rows="1" spellcheck="false"></textarea></div>
+        </div>
+    </body>
+</html>
